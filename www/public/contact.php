@@ -63,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <li>📦 Download the code. You've done this. </li>
                             <li>⭐ Give the project a star!</li>
                         </ul>
-                        <a href="https://github.com/username/repo" class="button primary" style="margin-top: 2rem;">
+                        <a href="https://github.com/ebrown-32/Web-Dev-Starter-Kit" class="button primary" style="margin-top: 2rem;">
                             Visit GitHub Repository
                         </a>
                     </div>
