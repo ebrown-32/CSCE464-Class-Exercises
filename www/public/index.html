@@ -1,31 +1,168 @@
-<!--#include virtual="common/document_head.html"-->
-<!-- index.html for ch03/nature3 -->
-  <body>
-    <table>
-      <!--#include virtual="common/logo_row.html"-->
-      <!--#include virtual="common/mainmenu_row.html"-->
-      <tr>
-        <td colspan="3">
-          <h3>Welcome to Nature's Source:
-          Protecting your health naturally!</h3>
-          <p>Founded in 1998, Nature's Source was created to serve those who
-          use alternative healing methods. Offering only the highest quality
-          vitamins, minerals, supplements &amp; herbal remedies, Nature's
-          Source takes great pride in helping people live healthier, happier
-          lives.</p>
-          <p>Many companies that talk about customer service fail to deliver.
-          Nature's Source exists to truly serve all the needs of their
-          customers. Each location features dedicated on-site therapists
-          along with knowledgeable staff who ensure that every customer
-          receives the best quality information available. Continuing
-          education seminars are a regular event at Nature's Source.</p>
-        </td>
-        <td colspan="2">
-          <img src="images/outdoor4.jpg" alt="Get healthy and stay healthy"
-               width="256" height="256">
-       </td>
-      </tr>
-      <!--#include virtual="common/footer_row.html"-->
-    </table>
-  </body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Starter Kit</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Welcome to Your Web Development Journey</h1>
+                <p class="lead">A modern starter kit for building websites with HTML, CSS, PHP, and MySQL.</p>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section">
+            <div class="container">
+                <h2>Core Features</h2>
+                <div class="features">
+                    <div class="feature">
+                        <h3>HTML5</h3>
+                        <p>Modern markup for structuring your content</p>
+                        <div class="code-example">
+                            <code>
+                                &lt;section class="hero"&gt;<br>
+                                &nbsp;&nbsp;&lt;h1&gt;Welcome&lt;/h1&gt;<br>
+                                &lt;/section&gt;
+                            </code>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <h3>CSS3</h3>
+                        <p>Beautiful styling and responsive design</p>
+                        <div class="code-example">
+                            <code>
+                                .hero {<br>
+                                &nbsp;&nbsp;background: #f5f5f5;<br>
+                                &nbsp;&nbsp;padding: 2rem;<br>
+                                }
+                            </code>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <h3>PHP Ready</h3>
+                        <p>Dynamic features when you need them</p>
+                        <div class="code-example">
+                            <code>
+                                &lt;?php<br>
+                                &nbsp;&nbsp;echo "Hello!";<br>
+                                ?&gt;
+                            </code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Examples Section -->
+        <section class="examples-section">
+            <div class="container">
+                <h2>HTML Examples</h2>
+                
+                <!-- Text Elements -->
+                <div class="example-block">
+                    <h3>Text Elements</h3>
+                    <div class="example-grid">
+                        <div class="example">
+                            <h4>Headings</h4>
+                            <h1>Heading 1</h1>
+                            <h2>Heading 2</h2>
+                            <h3>Heading 3</h3>
+                        </div>
+                        <div class="example">
+                            <h4>Paragraphs</h4>
+                            <p>A simple paragraph of text.</p>
+                            <p><strong>Bold text</strong> and <em>italic text</em>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lists -->
+                <div class="example-block">
+                    <h3>Lists</h3>
+                    <div class="example-grid">
+                        <div class="example">
+                            <h4>Unordered List</h4>
+                            <ul>
+                                <li>First item</li>
+                                <li>Second item</li>
+                                <li>Third item</li>
+                            </ul>
+                        </div>
+                        <div class="example">
+                            <h4>Ordered List</h4>
+                            <ol>
+                                <li>First step</li>
+                                <li>Second step</li>
+                                <li>Third step</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Links and Buttons -->
+                <div class="example-block">
+                    <h3>Interactive Elements</h3>
+                    <div class="example-grid">
+                        <div class="example">
+                            <h4>Links</h4>
+                            <a href="#" class="link">Normal Link</a>
+                            <a href="#" class="button">Button Link</a>
+                        </div>
+                        <div class="example">
+                            <h4>Buttons</h4>
+                            <button class="button primary">Primary Button</button>
+                            <button class="button secondary">Secondary Button</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Getting Started Section -->
+        <section class="getting-started">
+            <div class="container">
+                <h2>Getting Started</h2>
+                <div class="steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <h3>Create HTML Files</h3>
+                        <p>Add your HTML files in the <code>public</code> folder.</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <h3>Style Your Pages</h3>
+                        <p>Add CSS in <code>public/assets/css/style.css</code>.</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <h3>Add Dynamic Features</h3>
+                        <p>Use PHP when you're ready to add dynamic content.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>This resource was put together by <a href="https://elibrown.info/" class="footer-link">Eli Brown</a>. You don't have to keep this 😎</p>
+            <p class="motto">Have fun!</p>
+        </div>
+    </footer>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html> 
